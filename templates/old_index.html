@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <style>
+        .row {
+            display: flex;
+        }
+        .column {
+            padding: 10px;
+            flex: 50%;
+        }
+        .container {
+            padding: 10px;
+        }
+
+
+    </style>
+    <head>
+        Multi Document Query
+    </head>
+
+    <body>
+        <div class="row">
+            <div class="column">
+                <form action="", method="post">
+                    <label for="question">What PDF would you like to Open</label>
+                    <input type="question" name="question">
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
+
+
+                <p>{{result}}</p>
+            </div>
+
+            <div class="column">
+                <div class="container">
+                    <embed class="pdf" src={{source_document}} width= "100%" height="500">
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
